@@ -1,0 +1,23 @@
+/* ============================================
+   CATALINA ARISTIZABAL — ESTILOS PRINCIPALES
+   Paleta: crema, tierra, verde suave, negro
+   ============================================ */
+
+:root {
+  --color-bg: #faf8f5;
+  --color-cream: #f5f0e8;
+  --color-terra: #c4a882;
+  --color-terra-dark: #9a7d5a;
+  --color-green: #6b7c5e;
+  --color-dark: #1a1a1a;
+  --color-text: #3a3530;
+  --color-text-light: #7a7067;
+  --color-border: #e8e2d9;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --max-width: 1200px;
+  --section-padding: 7rem 1.5rem;
+  --section-padding-sm: 4rem 1.5rem;
+}
