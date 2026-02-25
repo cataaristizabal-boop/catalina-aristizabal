@@ -126,6 +126,11 @@ h4 { font-size: 1.1rem; font-weight: 400; }
   transition: color 0.4s;
 }
 .nav.scrolled .nav-logo { color: var(--color-dark); }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
 .btn-nav {
   font-size: 0.7rem;
   font-weight: 500;
@@ -139,6 +144,22 @@ h4 { font-size: 1.1rem; font-weight: 400; }
 .btn-nav:hover { background: rgba(255,255,255,0.15); }
 .nav.scrolled .btn-nav { border-color: var(--color-dark); color: var(--color-dark); }
 .nav.scrolled .btn-nav:hover { background: var(--color-dark); color: #fff; }
+.btn-lang {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-lang:hover { background: rgba(255,255,255,0.15); }
+.nav.scrolled .btn-lang { border-color: var(--color-dark); color: var(--color-dark); }
+.nav.scrolled .btn-lang:hover { background: var(--color-dark); color: #fff; }
 
 /* ============================================
    HERO
@@ -189,7 +210,7 @@ h4 { font-size: 1.1rem; font-weight: 400; }
    IMPACTO
    ============================================ */
 .impacto { padding: 6rem 1.5rem; background: var(--color-dark); }
- .impacto-text {
+.impacto-text {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: clamp(1.6rem, 3.5vw, 2.6rem);
@@ -202,7 +223,7 @@ h4 { font-size: 1.1rem; font-weight: 400; }
 }
 
 /* ============================================
-   PARA QUIEN
+   PARA QUIÉN
    ============================================ */
 .para-quien { padding: var(--section-pad); }
 .pq-image-wrap { position: relative; }
