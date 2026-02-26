@@ -16,11 +16,16 @@
   <nav class="nav" id="nav">
     <a href="#" class="nav-logo">Catalina Aristizabal</a>
     <ul class="nav-links">
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#mundos">Mis mundos</a></li>
+      <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#mundos" data-i18n="nav.worlds">Mis mundos</a></li>
       <li><a href="#podcast">Podcast</a></li>
       <li><a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
+    <div class="lang-switcher" id="langSwitcher">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -32,14 +37,12 @@
       <img src="images/foto1.jpg" alt="Catalina Aristizabal" class="hero-img" />
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow">Una mirada profunda<br />hacia el equilibrio, la salud y la belleza consciente</p>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Una mirada profunda<br />hacia el equilibrio, la salud y la belleza consciente</p>
       <h1 class="hero-title">Catalina<br />Aristizabal</h1>
-      <p class="hero-tagline">Salud, belleza y consciencia<br />en un mismo camino.</p>
-      <a href="#mundos" class="btn btn-outline">Explora mi mundo</a>
+      <p class="hero-tagline" data-i18n="hero.tagline">Salud, belleza y consciencia<br />en un mismo camino.</p>
+      <a href="#mundos" class="btn btn-outline" data-i18n="hero.cta">Explora mi mundo</a>
     </div>
-    <div class="hero-scroll">
-      <span></span>
-    </div>
+    <div class="hero-scroll"><span></span></div>
   </section>
 
   <!-- SOBRE MÍ -->
@@ -49,13 +52,13 @@
         <img src="images/foto2.jpg" alt="Catalina" class="sobre-img" />
       </div>
       <div class="sobre-text fade-in">
-        <span class="section-label">Sobre mí</span>
-        <h2>No llegué al bienestar<br />desde la teoría.</h2>
-        <p>Llegué desde la experiencia. Durante años estudié el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnóstico de Hashimoto marcó un antes y un después. Me obligó a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.</p>
-        <p>No creo en soluciones rápidas. Creo en comprensión profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompañado a mujeres que desean entender su cuerpo, recuperar su energía y vivir con mayor claridad. No desde la perfección, sino desde el equilibrio.</p>
-        <p>Soy fundadora de Terra Mística, autora y educadora en bienestar femenino. Pero más allá de los títulos, soy una mujer que decidió convertir el aprendizaje en servicio.</p>
-        <p class="sobre-frase">Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformación ocurre cuando comprendemos quiénes somos y cómo funciona nuestro cuerpo.</p>
-        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark">Sígueme en Instagram</a>
+        <span class="section-label" data-i18n="about.label">Sobre mí</span>
+        <h2 data-i18n="about.title">No llegué al bienestar<br />desde la teoría.</h2>
+        <p data-i18n="about.p1">Llegué desde la experiencia. Durante años estudié el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnóstico de Hashimoto marcó un antes y un después. Me obligó a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.</p>
+        <p data-i18n="about.p2">No creo en soluciones rápidas. Creo en comprensión profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompañado a mujeres que desean entender su cuerpo, recuperar su energía y vivir con mayor claridad. No desde la perfección, sino desde el equilibrio.</p>
+        <p data-i18n="about.p3">Soy fundadora de Terra Mística, autora y educadora en bienestar femenino. Pero más allá de los títulos, soy una mujer que decidió convertir el aprendizaje en servicio.</p>
+        <p class="sobre-frase" data-i18n="about.frase">Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformación ocurre cuando comprendemos quiénes somos y cómo funciona nuestro cuerpo.</p>
+        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="about.cta">Sígueme en Instagram</a>
       </div>
     </div>
   </section>
@@ -64,9 +67,9 @@
   <section class="mundos" id="mundos">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-label">Lo que hago</span>
-        <h2>Mis mundos</h2>
-        <p class="section-desc">Cinco caminos hacia el bienestar, la consciencia y la belleza natural.</p>
+        <span class="section-label" data-i18n="worlds.label">Lo que hago</span>
+        <h2 data-i18n="worlds.title">Mis mundos</h2>
+        <p class="section-desc" data-i18n="worlds.desc">Cinco caminos hacia el bienestar, la consciencia y la belleza natural.</p>
       </div>
       <div class="mundos-grid">
         <article class="mundo-card fade-in">
@@ -75,10 +78,10 @@
             <div class="mundo-overlay"></div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag">Curso online</span>
-            <h3>Belleza Natural</h3>
-            <p>6 módulos para transformar tu relación con tu cuerpo desde adentro. Nutrición, movimiento, meditación y más.</p>
-            <a href="belleza-natural/index.html" class="btn btn-dark">Ver curso →</a>
+            <span class="mundo-tag" data-i18n="worlds.course.tag">Curso online</span>
+            <h3 data-i18n="worlds.course.title">Belleza Natural</h3>
+            <p data-i18n="worlds.course.desc">6 módulos para transformar tu relación con tu cuerpo desde adentro. Nutrición, movimiento, meditación y más.</p>
+            <a href="belleza-natural/index.html" class="btn btn-dark" data-i18n="worlds.course.cta">Ver curso →</a>
           </div>
         </article>
         <article class="mundo-card fade-in">
@@ -86,11 +89,11 @@
             <img src="images/youtube-canal.jpg" alt="Nuevo Canal YouTube" />
             <div class="mundo-overlay"></div>
           </div>
-                    <div class="mundo-content">
-            <span class="mundo-tag">YouTube · Próximamente</span>
-            <h3>Nuevo Canal</h3>
-            <p>Contenido sobre salud holística, estilo de vida consciente y bienestar. Suscríbete para ser el primero.</p>
-            <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn btn-outline-dark">Suscríbete →</a>
+          <div class="mundo-content">
+            <span class="mundo-tag" data-i18n="worlds.youtube.tag">YouTube · Próximamente</span>
+            <h3 data-i18n="worlds.youtube.title">Nuevo Canal</h3>
+            <p data-i18n="worlds.youtube.desc">Contenido sobre salud holística, estilo de vida consciente y bienestar. Suscríbete para ser el primero.</p>
+            <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn btn-outline-dark" data-i18n="worlds.youtube.cta">Suscríbete →</a>
           </div>
         </article>
         <article class="mundo-card fade-in">
@@ -99,10 +102,10 @@
             <div class="mundo-overlay"></div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag">Tienda · Productos naturales</span>
-            <h3>Terra Mística</h3>
-            <p>Co-fundadora de una línea de productos naturales para el bienestar y la belleza consciente.</p>
-            <a href="https://terramistica.us/" target="_blank" rel="noopener" class="btn btn-dark">Explorar tienda →</a>
+            <span class="mundo-tag" data-i18n="worlds.terra.tag">Tienda · Productos naturales</span>
+            <h3 data-i18n="worlds.terra.title">Terra Mística</h3>
+            <p data-i18n="worlds.terra.desc">Co-fundadora de una línea de productos naturales para el bienestar y la belleza consciente.</p>
+            <a href="https://terramistica.us/" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="worlds.terra.cta">Explorar tienda →</a>
           </div>
         </article>
         <article class="mundo-card fade-in">
@@ -110,10 +113,10 @@
             <img src="images/libro-belleza-hormonal.jpg" alt="Libro Belleza Hormonal" />
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag">Libro</span>
-            <h3>Belleza Hormonal</h3>
-            <p>Mi libro sobre el equilibrio hormonal, la belleza desde adentro y cómo entender tu cuerpo femenino para vivir mejor.</p>
-            <a href="https://terramistica.us/es/products/belleza-hormonal?_pos=1&_psq=libro&_ss=e&_v=1.0" target="_blank" rel="noopener" class="btn btn-dark">Conseguir libro →</a>
+            <span class="mundo-tag" data-i18n="worlds.book.tag">Libro</span>
+            <h3 data-i18n="worlds.book.title">Belleza Hormonal</h3>
+            <p data-i18n="worlds.book.desc">Mi libro sobre el equilibrio hormonal, la belleza desde adentro y cómo entender tu cuerpo femenino para vivir mejor.</p>
+            <a href="https://terramistica.us/es/products/belleza-hormonal?_pos=1&_psq=libro&_ss=e&_v=1.0" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="worlds.book.cta">Conseguir libro →</a>
           </div>
         </article>
         <article class="mundo-card fade-in">
@@ -122,9 +125,9 @@
             <div class="mundo-overlay"></div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag">Podcast</span>
-            <h3>Naturaleza Femenina</h3>
-            <p>Conversaciones sobre equilibrio, plenitud y salud integral femenina. Disponible en tus plataformas favoritas.</p>
+            <span class="mundo-tag" data-i18n="worlds.podcast.tag">Podcast</span>
+            <h3 data-i18n="worlds.podcast.title">Naturaleza Femenina</h3>
+            <p data-i18n="worlds.podcast.desc">Conversaciones sobre equilibrio, plenitud y salud integral femenina. Disponible en tus plataformas favoritas.</p>
             <div class="podcast-links">
               <a href="https://open.spotify.com/show/6N3iN2H224D4bovJfa7loh" target="_blank" rel="noopener" class="btn-podcast">Spotify</a>
               <a href="https://podcasts.apple.com/us/podcast/naturaleza-femenina/id1592324924" target="_blank" rel="noopener" class="btn-podcast">Apple Podcasts</a>
@@ -139,7 +142,7 @@
   <section class="filosofia">
     <div class="container">
       <div class="filosofia-inner fade-in">
-        <blockquote>
+        <blockquote data-i18n="quote.text">
           "La salud no es solo lo que comes.<br />Es todo lo que piensas, sientes y cómo te mueves por la vida."
         </blockquote>
         <cite>— Catalina Aristizabal</cite>
@@ -152,9 +155,9 @@
     <div class="container">
       <div class="instagram-content fade-in">
         <span class="section-label">@catalinaaristizabalh</span>
-        <h2>Únete a la comunidad</h2>
-        <p>Comparto recetas, reflexiones, movimiento y todo lo que me apasiona sobre vivir bien.</p>
-        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark">Seguir en Instagram</a>
+        <h2 data-i18n="ig.title">Únete a la comunidad</h2>
+        <p data-i18n="ig.desc">Comparto recetas, reflexiones, movimiento y todo lo que me apasiona sobre vivir bien.</p>
+        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="ig.cta">Seguir en Instagram</a>
       </div>
     </div>
   </section>
@@ -163,11 +166,11 @@
   <section class="podcast-section" id="podcast">
     <div class="container grid-2 grid-2--reverse">
       <div class="podcast-text fade-in">
-        <span class="section-label">Escúchame</span>
-        <h2>Naturaleza Femenina</h2>
-        <p>Un podcast sobre equilibrio, plenitud y salud integral femenina. Cada episodio es una invitación a reconectar con tu naturaleza más profunda.</p>
+        <span class="section-label" data-i18n="podcast.label">Escúchame</span>
+        <h2 data-i18n="podcast.title">Naturaleza Femenina</h2>
+        <p data-i18n="podcast.desc">Un podcast sobre equilibrio, plenitud y salud integral femenina. Cada episodio es una invitación a reconectar con tu naturaleza más profunda.</p>
         <div class="podcast-actions">
-          <a href="https://open.spotify.com/show/6N3iN2H224D4bovJfa7loh" target="_blank" rel="noopener" class="btn btn-dark">Escuchar en Spotify</a>
+          <a href="https://open.spotify.com/show/6N3iN2H224D4bovJfa7loh" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="podcast.spotify">Escuchar en Spotify</a>
           <a href="https://podcasts.apple.com/us/podcast/naturaleza-femenina/id1592324924" target="_blank" rel="noopener" class="btn btn-outline-dark">Apple Podcasts</a>
         </div>
       </div>
@@ -177,8 +180,8 @@
             <span></span><span></span><span></span><span></span><span></span>
             <span></span><span></span><span></span><span></span><span></span>
           </div>
-          <p class="podcast-name">Naturaleza Femenina</p>
-          <p class="podcast-by">con Catalina Aristizabal</p>
+          <p class="podcast-name" data-i18n="podcast.name">Naturaleza Femenina</p>
+          <p class="podcast-by" data-i18n="podcast.by">con Catalina Aristizabal</p>
         </div>
       </div>
     </div>
@@ -189,7 +192,7 @@
     <div class="container">
       <div class="footer-top">
         <p class="footer-logo">Catalina Aristizabal</p>
-        <p class="footer-tagline">Health Coach · Empresaria · Escritora</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Health Coach · Empresaria · Escritora</p>
       </div>
       <div class="footer-links">
         <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener">Instagram</a>
@@ -198,7 +201,7 @@
         <a href="https://open.spotify.com/show/6N3iN2H224D4bovJfa7loh" target="_blank" rel="noopener">Podcast</a>
         <a href="https://terramistica.us/" target="_blank" rel="noopener">Terra Mística</a>
       </div>
-      <p class="footer-copy">© 2026 Catalina Aristizabal. Todos los derechos reservados.</p>
+      <p class="footer-copy" data-i18n="footer.copy">© 2026 Catalina Aristizabal. Todos los derechos reservados.</p>
     </div>
   </footer>
 
