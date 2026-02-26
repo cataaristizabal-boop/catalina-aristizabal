@@ -129,7 +129,7 @@ h1, h2, h3, h4 {
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-text);
+  color: #ffffff;
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--color-terra); }
