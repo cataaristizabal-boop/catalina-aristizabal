@@ -18,8 +18,6 @@ if (navToggle) {
   navToggle.addEventListener('click', () => {
     nav.classList.toggle('open');
   });
-
-  // Cerrar menu al hacer click en un link
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('open');
@@ -29,11 +27,9 @@ if (navToggle) {
 
 // === FADE IN on scroll ===
 const fadeElements = document.querySelectorAll('.fade-in');
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
-      // Stagger effect para grids
       const delay = entry.target.closest('.mundos-grid')
         ? Array.from(fadeElements).indexOf(entry.target) * 80
         : 0;
@@ -43,14 +39,10 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.12,
-  rootMargin: '0px 0px -40px 0px'
-});
-
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 fadeElements.forEach(el => observer.observe(el));
 
-// === Smooth scroll para links internos ===
+// === Smooth scroll ===
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
@@ -62,3 +54,123 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// === LANGUAGE SWITCHER ===
+const translations = {
+  es: {
+    'nav.about': 'Sobre mi',
+    'nav.worlds': 'Mis mundos',
+    'hero.eyebrow': 'Una mirada profunda<br />hacia el equilibrio, la salud y la belleza consciente',
+    'hero.tagline': 'Salud, belleza y consciencia<br />en un mismo camino.',
+    'hero.cta': 'Explora mi mundo',
+    'about.label': 'Sobre mi',
+    'about.title': 'No llegue al bienestar<br />desde la teoria.',
+    'about.p1': 'Llegue desde la experiencia. Durante anos estudie el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnostico de Hashimoto marco un antes y un despues. Me obligo a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.',
+    'about.p2': 'No creo en soluciones rapidas. Creo en comprension profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompanado a mujeres que desean entender su cuerpo, recuperar su energia y vivir con mayor claridad. No desde la perfeccion, sino desde el equilibrio.',
+    'about.p3': 'Soy fundadora de Terra Mistica, autora y educadora en bienestar femenino. Pero mas alla de los titulos, soy una mujer que decidio convertir el aprendizaje en servicio.',
+    'about.frase': 'Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformacion ocurre cuando comprendemos quienes somos y como funciona nuestro cuerpo.',
+    'about.cta': 'Sigueme en Instagram',
+    'worlds.label': 'Lo que hago',
+    'worlds.title': 'Mis mundos',
+    'worlds.desc': 'Cinco caminos hacia el bienestar, la consciencia y la belleza natural.',
+    'worlds.course.tag': 'Curso online',
+    'worlds.course.title': 'Belleza Natural',
+    'worlds.course.desc': '6 modulos para transformar tu relacion con tu cuerpo desde adentro. Nutricion, movimiento, meditacion y mas.',
+    'worlds.course.cta': 'Ver curso',
+    'worlds.youtube.tag': 'YouTube · Proximamente',
+    'worlds.youtube.title': 'Nuevo Canal',
+    'worlds.youtube.desc': 'Contenido sobre salud holistica, estilo de vida consciente y bienestar. Suscribete para ser el primero.',
+    'worlds.youtube.cta': 'Suscribete',
+    'worlds.terra.tag': 'Tienda · Productos naturales',
+    'worlds.terra.title': 'Terra Mistica',
+    'worlds.terra.desc': 'Co-fundadora de una linea de productos naturales para el bienestar y la belleza consciente.',
+    'worlds.terra.cta': 'Explorar tienda',
+    'worlds.book.tag': 'Libro',
+    'worlds.book.title': 'Belleza Hormonal',
+    'worlds.book.desc': 'Mi libro sobre el equilibrio hormonal, la belleza desde adentro y como entender tu cuerpo femenino para vivir mejor.',
+    'worlds.book.cta': 'Conseguir libro',
+    'worlds.podcast.tag': 'Podcast',
+    'worlds.podcast.title': 'Naturaleza Femenina',
+    'worlds.podcast.desc': 'Conversaciones sobre equilibrio, plenitud y salud integral femenina. Disponible en tus plataformas favoritas.',
+    'quote.text': '"La salud no es solo lo que comes.<br />Es todo lo que piensas, sientes y como te mueves por la vida."',
+    'ig.title': 'Unete a la comunidad',
+    'ig.desc': 'Comparto recetas, reflexiones, movimiento y todo lo que me apasiona sobre vivir bien.',
+    'ig.cta': 'Seguir en Instagram',
+    'podcast.label': 'Escuchame',
+    'podcast.title': 'Naturaleza Femenina',
+    'podcast.desc': 'Un podcast sobre equilibrio, plenitud y salud integral femenina. Cada episodio es una invitacion a reconectar con tu naturaleza mas profunda.',
+    'podcast.spotify': 'Escuchar en Spotify',
+    'podcast.name': 'Naturaleza Femenina',
+    'podcast.by': 'con Catalina Aristizabal',
+    'footer.tagline': 'Health Coach · Empresaria · Escritora',
+    'footer.copy': '2026 Catalina Aristizabal. Todos los derechos reservados.',
+  },
+  en: {
+    'nav.about': 'About me',
+    'nav.worlds': 'My worlds',
+    'hero.eyebrow': 'A deep look<br />into balance, health and conscious beauty',
+    'hero.tagline': 'Health, beauty and consciousness<br />on the same path.',
+    'hero.cta': 'Explore my world',
+    'about.label': 'About me',
+    'about.title': 'I did not find wellness<br />through theory.',
+    'about.p1': 'I found it through experience. For years I studied the female body, hormones, the microbiome and the internal processes we often do not understand until they hit us. My own Hashimoto diagnosis was a turning point. It forced me to look inward, to question, to research and to build knowledge with real foundation.',
+    'about.p2': 'I do not believe in quick fixes. I believe in deep understanding. My work connects science, awareness and real experience. I have guided women who want to understand their bodies, recover their energy and live with greater clarity. Not from perfection, but from balance.',
+    'about.p3': 'I am the founder of Terra Mistica, an author and educator in feminine wellness. But beyond the titles, I am a woman who chose to turn learning into service.',
+    'about.frase': 'My approach is not to impose a path. It is to offer clarity so that every woman can inhabit her body with confidence. Because true transformation happens when we understand who we are and how our body works.',
+    'about.cta': 'Follow me on Instagram',
+    'worlds.label': 'What I do',
+    'worlds.title': 'My worlds',
+    'worlds.desc': 'Five paths toward wellness, consciousness and natural beauty.',
+    'worlds.course.tag': 'Online course',
+    'worlds.course.title': 'Natural Beauty',
+    'worlds.course.desc': '6 modules to transform your relationship with your body from the inside out. Nutrition, movement, meditation and more.',
+    'worlds.course.cta': 'View course',
+    'worlds.youtube.tag': 'YouTube · Coming soon',
+    'worlds.youtube.title': 'New Channel',
+    'worlds.youtube.desc': 'Content about holistic health, conscious lifestyle and wellness. Subscribe to be the first to know.',
+    'worlds.youtube.cta': 'Subscribe',
+    'worlds.terra.tag': 'Shop · Natural products',
+    'worlds.terra.title': 'Terra Mistica',
+    'worlds.terra.desc': 'Co-founder of a line of natural products for wellness and conscious beauty.',
+    'worlds.terra.cta': 'Explore shop',
+    'worlds.book.tag': 'Book',
+    'worlds.book.title': 'Hormonal Beauty',
+    'worlds.book.desc': 'My book about hormonal balance, beauty from the inside out and how to understand your female body to live better.',
+    'worlds.book.cta': 'Get the book',
+    'worlds.podcast.tag': 'Podcast',
+    'worlds.podcast.title': 'Feminine Nature',
+    'worlds.podcast.desc': 'Conversations about balance, wholeness and integral feminine health. Available on your favorite platforms.',
+    'quote.text': '"Health is not just what you eat.<br />It is everything you think, feel and how you move through life."',
+    'ig.title': 'Join the community',
+    'ig.desc': 'I share recipes, reflections, movement and everything I am passionate about when it comes to living well.',
+    'ig.cta': 'Follow on Instagram',
+    'podcast.label': 'Listen to me',
+    'podcast.title': 'Feminine Nature',
+    'podcast.desc': 'A podcast about balance, wholeness and integral feminine health. Every episode is an invitation to reconnect with your deepest nature.',
+    'podcast.spotify': 'Listen on Spotify',
+    'podcast.name': 'Feminine Nature',
+    'podcast.by': 'with Catalina Aristizabal',
+    'footer.tagline': 'Health Coach · Entrepreneur · Author',
+    'footer.copy': '2026 Catalina Aristizabal. All rights reserved.',
+  }
+};
+
+function applyLanguage(lang) {
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+  localStorage.setItem('lang', lang);
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyLanguage(btn.getAttribute('data-lang')));
+});
+
+const savedLang = localStorage.getItem('lang') || 'es';
+applyLanguage(savedLang);
