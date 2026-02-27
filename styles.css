@@ -826,3 +826,23 @@ h1, h2, h3, h4 {
     font-size: clamp(1.15rem, 5vw, 1.4rem);
   }
 }
+
+/* Fix: hide podcast image wrap on mobile (no image loaded) */
+@media (max-width: 900px) {
+  .podcast-image-wrap {
+    display: none;
+  }
+  .podcast-section .container {
+    grid-template-columns: 1fr;
+  }
+  .podcast-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .podcast-actions .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+}
