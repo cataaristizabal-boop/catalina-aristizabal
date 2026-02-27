@@ -1,6 +1,6 @@
 /* ============================================
    CATALINA ARISTIZABAL — SCRIPTS
-   ============================================ */
+============================================ */
 
 // === NAV: scroll effect ===
 const nav = document.getElementById('nav');
@@ -12,16 +12,45 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-// === NAV: mobile toggle ===
+// === NAV: mobile toggle (panel lateral izquierdo) ===
 const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+function openMobileMenu() {
+  mobileMenu.classList.add('open');
+  mobileMenuOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('open');
+  mobileMenuOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-  });
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-    });
+  navToggle.addEventListener('click', openMobileMenu);
+}
+if (mobileMenuClose) {
+  mobileMenuClose.addEventListener('click', closeMobileMenu);
+}
+if (mobileMenuOverlay) {
+  mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+}
+
+// Cerrar al hacer clic en un link del menú móvil
+document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+  link.addEventListener('click', closeMobileMenu);
+});
+
+// === Desplegable "Mis mundos" en menú móvil ===
+const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+if (mobileDropdownToggle) {
+  mobileDropdownToggle.addEventListener('click', () => {
+    const parent = mobileDropdownToggle.closest('.mobile-item-dropdown');
+    parent.classList.toggle('open');
   });
 }
 
@@ -40,6 +69,7 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
 fadeElements.forEach(el => observer.observe(el));
 
 // === Smooth scroll ===
