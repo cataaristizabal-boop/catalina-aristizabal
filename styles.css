@@ -750,3 +750,12 @@ h1, h2, h3, h4 {
     margin-right: 0.5rem;
   }
 }
+
+/* ============================================================
+   HERO DESKTOP FIX — prevent button overlay on face
+   ============================================================ */
+@media (min-width: 601px) {
+     .hero-content {
+            max-width: 480px;
+     }
+}
