@@ -1,5 +1,5 @@
 /* ============================================
-   CATALINA ARISTIZABAL — SCRIPTS
+   CATALINA ARISTIZABAL â SCRIPTS
 ============================================ */
 
 // === NAV: scroll effect ===
@@ -40,12 +40,12 @@ if (mobileMenuOverlay) {
   mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 }
 
-// Cerrar al hacer clic en un link del menú móvil
+// Cerrar al hacer clic en un link del menÃº mÃ³vil
 document.querySelectorAll('.mobile-nav-links a').forEach(link => {
   link.addEventListener('click', closeMobileMenu);
 });
 
-// === Desplegable "Mis mundos" en menú móvil ===
+// === Desplegable "Mis mundos" en menÃº mÃ³vil ===
 const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
 if (mobileDropdownToggle) {
   mobileDropdownToggle.addEventListener('click', () => {
@@ -107,11 +107,11 @@ const translations = {
     'worlds.course.title': 'Belleza Natural',
     'worlds.course.desc': '6 modulos para transformar tu relacion con tu cuerpo desde adentro. Nutricion, movimiento, meditacion y mas.',
     'worlds.course.cta': 'Ver curso',
-    'worlds.youtube.tag': 'YouTube · Proximamente',
+    'worlds.youtube.tag': 'YouTube Â· Proximamente',
     'worlds.youtube.title': 'Nuevo Canal',
     'worlds.youtube.desc': 'Contenido sobre salud holistica, estilo de vida consciente y bienestar. Suscribete para ser el primero.',
     'worlds.youtube.cta': 'Suscribete',
-    'worlds.terra.tag': 'Tienda · Productos naturales',
+    'worlds.terra.tag': 'Tienda Â· Productos naturales',
     'worlds.terra.title': 'Terra Mistica',
     'worlds.terra.desc': 'Co-fundadora de una linea de productos naturales para el bienestar y la belleza consciente.',
     'worlds.terra.cta': 'Explorar tienda',
@@ -120,19 +120,19 @@ const translations = {
     'worlds.book.desc': 'Mi libro sobre el equilibrio hormonal, la belleza desde adentro y como entender tu cuerpo femenino para vivir mejor.',
     'worlds.book.cta': 'Conseguir libro',
     'worlds.podcast.tag': 'Podcast',
-    'worlds.podcast.title': 'Naturaleza Femenina',
-    'worlds.podcast.desc': 'Conversaciones sobre equilibrio, plenitud y salud integral femenina. Disponible en tus plataformas favoritas.',
+    'worlds.podcast.title': 'Conversaciones que Sanan',
+    'worlds.podcast.desc': 'Conversaciones profundas que sanan el alma, la mente y el cuerpo. Disponible en Spreaker.',
     'quote.text': '"La salud no es solo lo que comes.<br />Es todo lo que piensas, sientes y como te mueves por la vida."',
     'ig.title': 'Unete a la comunidad',
     'ig.desc': 'Comparto recetas, reflexiones, movimiento y todo lo que me apasiona sobre vivir bien.',
     'ig.cta': 'Seguir en Instagram',
     'podcast.label': 'Escuchame',
-    'podcast.title': 'Naturaleza Femenina',
-    'podcast.desc': 'Un podcast sobre equilibrio, plenitud y salud integral femenina. Cada episodio es una invitacion a reconectar con tu naturaleza mas profunda.',
-    'podcast.spotify': 'Escuchar en Spotify',
-    'podcast.name': 'Naturaleza Femenina',
+    'podcast.title': 'Conversaciones que Sanan',
+    'podcast.desc': 'Un podcast de conversaciones profundas que sanan el alma, la mente y el cuerpo.',
+    'podcast.spotify': 'Escuchar en Spreaker',
+    'podcast.name': 'Conversaciones que Sanan',
     'podcast.by': 'con Catalina Aristizabal',
-    'footer.tagline': 'Health Coach · Empresaria · Escritora',
+    'footer.tagline': 'Health Coach Â· Empresaria Â· Escritora',
     'footer.copy': '2026 Catalina Aristizabal. Todos los derechos reservados.',
   },
   en: {
@@ -155,11 +155,11 @@ const translations = {
     'worlds.course.title': 'Natural Beauty',
     'worlds.course.desc': '6 modules to transform your relationship with your body from the inside out. Nutrition, movement, meditation and more.',
     'worlds.course.cta': 'View course',
-    'worlds.youtube.tag': 'YouTube · Coming soon',
+    'worlds.youtube.tag': 'YouTube Â· Coming soon',
     'worlds.youtube.title': 'New Channel',
     'worlds.youtube.desc': 'Content about holistic health, conscious lifestyle and wellness. Subscribe to be the first to know.',
     'worlds.youtube.cta': 'Subscribe',
-    'worlds.terra.tag': 'Shop · Natural products',
+    'worlds.terra.tag': 'Shop Â· Natural products',
     'worlds.terra.title': 'Terra Mistica',
     'worlds.terra.desc': 'Co-founder of a line of natural products for wellness and conscious beauty.',
     'worlds.terra.cta': 'Explore shop',
@@ -168,19 +168,19 @@ const translations = {
     'worlds.book.desc': 'My book about hormonal balance, beauty from the inside out and how to understand your female body to live better.',
     'worlds.book.cta': 'Get the book',
     'worlds.podcast.tag': 'Podcast',
-    'worlds.podcast.title': 'Feminine Nature',
-    'worlds.podcast.desc': 'Conversations about balance, wholeness and integral feminine health. Available on your favorite platforms.',
+    'worlds.podcast.title': 'Conversaciones que Sanan',
+    'worlds.podcast.desc': 'Deep conversations that heal the soul, mind and body. Available on Spreaker.',
     'quote.text': '"Health is not just what you eat.<br />It is everything you think, feel and how you move through life."',
     'ig.title': 'Join the community',
     'ig.desc': 'I share recipes, reflections, movement and everything I am passionate about when it comes to living well.',
     'ig.cta': 'Follow on Instagram',
     'podcast.label': 'Listen to me',
-    'podcast.title': 'Feminine Nature',
-    'podcast.desc': 'A podcast about balance, wholeness and integral feminine health. Every episode is an invitation to reconnect with your deepest nature.',
-    'podcast.spotify': 'Listen on Spotify',
-    'podcast.name': 'Feminine Nature',
+    'podcast.title': 'Conversaciones que Sanan',
+    'podcast.desc': 'A podcast of deep conversations that heal the soul, mind and body.',
+    'podcast.spotify': 'Listen on Spreaker',
+    'podcast.name': 'Conversaciones que Sanan',
     'podcast.by': 'with Catalina Aristizabal',
-    'footer.tagline': 'Health Coach · Entrepreneur · Author',
+    'footer.tagline': 'Health Coach Â· Entrepreneur Â· Author',
     'footer.copy': '2026 Catalina Aristizabal. All rights reserved.',
   }
 };
