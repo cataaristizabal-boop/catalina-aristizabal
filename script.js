@@ -29,7 +29,7 @@ function closeMobileMenu() {
   document.body.style.overflow = '';
 }
 
-if (navToggle) {
+f (navToggle) {
   navToggle.addEventListener('click', openMobileMenu);
 }
 if (mobileMenuClose) {
@@ -110,7 +110,7 @@ const translations = {
     'worlds.youtube.title': 'Nuevo Canal',
     'worlds.youtube.desc': 'Contenido sobre salud holistica, estilo de vida consciente y bienestar. Suscribete para ser el primero.',
     'worlds.youtube.cta': 'Suscribete',
-    'worlds.terra.tag': 'Tienda Â· Productos naturales',
+    'worlds.terra.tag': 'Tienda · Productos naturales',
     'worlds.terra.title': 'Terra Mistica',
     'worlds.terra.desc': 'Co-fundadora de una linea de productos naturales para el bienestar y la belleza consciente.',
     'worlds.terra.cta': 'Explorar tienda',
@@ -158,7 +158,7 @@ const translations = {
     'worlds.youtube.title': 'New Channel',
     'worlds.youtube.desc': 'Content about holistic health, conscious lifestyle and wellness. Subscribe to be the first to know.',
     'worlds.youtube.cta': 'Subscribe',
-    'worlds.terra.tag': 'Shop Â· Natural products',
+    'worlds.terra.tag': 'Shop · Natural products',
     'worlds.terra.title': 'Terra Mistica',
     'worlds.terra.desc': 'Co-founder of a line of natural products for wellness and conscious beauty.',
     'worlds.terra.cta': 'Explore shop',
