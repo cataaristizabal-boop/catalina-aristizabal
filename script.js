@@ -1,7 +1,6 @@
 /* ============================================
    CATALINA ARISTIZABAL â SCRIPTS
 ============================================ */
-
 // === NAV: scroll effect ===
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
