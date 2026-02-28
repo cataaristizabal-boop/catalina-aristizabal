@@ -204,3 +204,4 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 
 const savedLang = localStorage.getItem('lang') || 'es';
 applyLanguage(savedLang);
+
