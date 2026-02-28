@@ -1,6 +1,7 @@
 /* ============================================
-   CATALINA ARISTIZABAL â SCRIPTS
-============================================ */
+   CATALINA ARISTIZABAL — SCRIPTS
+   ============================================ */
+
 // === NAV: scroll effect ===
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -29,7 +30,7 @@ function closeMobileMenu() {
   document.body.style.overflow = '';
 }
 
-f (navToggle) {
+if (navToggle) {
   navToggle.addEventListener('click', openMobileMenu);
 }
 if (mobileMenuClose) {
@@ -39,12 +40,12 @@ if (mobileMenuOverlay) {
   mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 }
 
-// Cerrar al hacer clic en un link del menÃº mÃ³vil
+// Cerrar al hacer clic en un link del menú móvil
 document.querySelectorAll('.mobile-nav-links a').forEach(link => {
   link.addEventListener('click', closeMobileMenu);
 });
 
-// === Desplegable "Mis mundos" en menÃº mÃ³vil ===
+// === Desplegable "Mis mundos" en menú móvil ===
 const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
 if (mobileDropdownToggle) {
   mobileDropdownToggle.addEventListener('click', () => {
@@ -94,44 +95,44 @@ const translations = {
     'hero.cta': 'Explora mi mundo',
     'about.label': 'Sobre mi',
     'about.title': 'No llegue al bienestar<br />desde la teoria.',
-    'about.p1': 'Llegue desde la experiencia. Durante anos estudie el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnostico de Hashimoto marco un antes y un despues. Me obligo a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.',
-    'about.p2': 'No creo en soluciones rapidas. Creo en comprension profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompanado a mujeres que desean entender su cuerpo, recuperar su energia y vivir con mayor claridad. No desde la perfeccion, sino desde el equilibrio.',
-    'about.p3': 'Soy fundadora de Terra Mistica, autora y educadora en bienestar femenino. Pero mas alla de los titulos, soy una mujer que decidio convertir el aprendizaje en servicio.',
-    'about.frase': 'Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformacion ocurre cuando comprendemos quienes somos y como funciona nuestro cuerpo.',
-    'about.cta': 'Sigueme en Instagram',
+    'about.p1': 'Llegue desde la experiencia. Durante años estudie el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnóstico de Hashimoto marcó un antes y un después. Me obligó a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.',
+    'about.p2': 'No creo en soluciones rápidas. Creo en comprensión profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompañado a mujeres que desean entender su cuerpo, recuperar su energía y vivir con mayor claridad. No desde la perfección, sino desde el equilibrio.',
+    'about.p3': 'Soy fundadora de Terra Mística, autora y educadora en bienestar femenino. Pero más allá de los títulos, soy una mujer que decidió convertir el aprendizaje en servicio.',
+    'about.frase': 'Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformación ocurre cuando comprendemos quiénes somos y cómo funciona nuestro cuerpo.',
+    'about.cta': 'Sígueme en Instagram',
     'worlds.label': 'Lo que hago',
     'worlds.title': 'Mis mundos',
     'worlds.desc': 'Cinco caminos hacia el bienestar, la consciencia y la belleza natural.',
     'worlds.course.tag': 'Curso online',
     'worlds.course.title': 'Belleza Natural',
-    'worlds.course.desc': '6 modulos para transformar tu relacion con tu cuerpo desde adentro. Nutricion, movimiento, meditacion y mas.',
+    'worlds.course.desc': '6 módulos para transformar tu relación con tu cuerpo desde adentro. Nutrición, movimiento, meditación y más.',
     'worlds.course.cta': 'Ver curso',
-    'worlds.youtube.tag': 'YouTube Â· Proximamente',
+    'worlds.youtube.tag': 'YouTube · Próximamente',
     'worlds.youtube.title': 'Nuevo Canal',
-    'worlds.youtube.desc': 'Contenido sobre salud holistica, estilo de vida consciente y bienestar. Suscribete para ser el primero.',
-    'worlds.youtube.cta': 'Suscribete',
+    'worlds.youtube.desc': 'Contenido sobre salud holística, estilo de vida consciente y bienestar. Suscíbete para ser el primero.',
+    'worlds.youtube.cta': 'Suscríbete',
     'worlds.terra.tag': 'Tienda · Productos naturales',
-    'worlds.terra.title': 'Terra Mistica',
-    'worlds.terra.desc': 'Co-fundadora de una linea de productos naturales para el bienestar y la belleza consciente.',
+    'worlds.terra.title': 'Terra Mística',
+    'worlds.terra.desc': 'Co-fundadora de una línea de productos naturales para el bienestar y la belleza consciente.',
     'worlds.terra.cta': 'Explorar tienda',
     'worlds.book.tag': 'Libro',
     'worlds.book.title': 'Belleza Hormonal',
-    'worlds.book.desc': 'Mi libro sobre el equilibrio hormonal, la belleza desde adentro y como entender tu cuerpo femenino para vivir mejor.',
+    'worlds.book.desc': 'Mi libro sobre el equilibrio hormonal, la belleza desde adentro y cómo entender tu cuerpo femenino para vivir mejor.',
     'worlds.book.cta': 'Conseguir libro',
     'worlds.podcast.tag': 'Podcast',
     'worlds.podcast.title': 'Conversaciones que Sanan',
     'worlds.podcast.desc': 'Conversaciones profundas que sanan el alma, la mente y el cuerpo. Disponible en Spreaker.',
-    'quote.text': '"La salud no es solo lo que comes.<br />Es todo lo que piensas, sientes y como te mueves por la vida."',
-    'ig.title': 'Unete a la comunidad',
+    'quote.text': '"La salud no es solo lo que comes.<br />Es todo lo que piensas, sientes y cómo te mueves por la vida."',
+    'ig.title': 'Únete a la comunidad',
     'ig.desc': 'Comparto recetas, reflexiones, movimiento y todo lo que me apasiona sobre vivir bien.',
     'ig.cta': 'Seguir en Instagram',
-    'podcast.label': 'Escuchame',
+    'podcast.label': 'Escþchame',
     'podcast.title': 'Conversaciones que Sanan',
     'podcast.desc': 'Un podcast de conversaciones profundas que sanan el alma, la mente y el cuerpo.',
     'podcast.spotify': 'Escuchar en Spreaker',
     'podcast.name': 'Conversaciones que Sanan',
     'podcast.by': 'con Catalina Aristizabal',
-    'footer.tagline': 'Health Coach Â· Empresaria Â· Escritora',
+    'footer.tagline': 'Health Coach · Empresaria · Escritora',
     'footer.copy': '2026 Catalina Aristizabal. Todos los derechos reservados.',
   },
   en: {
@@ -154,7 +155,7 @@ const translations = {
     'worlds.course.title': 'Natural Beauty',
     'worlds.course.desc': '6 modules to transform your relationship with your body from the inside out. Nutrition, movement, meditation and more.',
     'worlds.course.cta': 'View course',
-    'worlds.youtube.tag': 'YouTube Â· Coming soon',
+    'worlds.youtube.tag': 'YouTube · Coming soon',
     'worlds.youtube.title': 'New Channel',
     'worlds.youtube.desc': 'Content about holistic health, conscious lifestyle and wellness. Subscribe to be the first to know.',
     'worlds.youtube.cta': 'Subscribe',
@@ -179,7 +180,7 @@ const translations = {
     'podcast.spotify': 'Listen on Spreaker',
     'podcast.name': 'Conversaciones que Sanan',
     'podcast.by': 'with Catalina Aristizabal',
-    'footer.tagline': 'Health Coach Â· Entrepreneur Â· Author',
+    'footer.tagline': 'Health Coach · Entrepreneur · Author',
     'footer.copy': '2026 Catalina Aristizabal. All rights reserved.',
   }
 };
@@ -203,4 +204,3 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 
 const savedLang = localStorage.getItem('lang') || 'es';
 applyLanguage(savedLang);
-
