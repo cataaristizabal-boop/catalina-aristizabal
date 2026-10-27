@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabaja conmigo — Catalina Aristizabal</title>
+  <meta name="description" content="Programa de coaching 1:1 en equilibrio hormonal, nutrición funcional y bienestar integral. 6 meses de acompañamiento profundo con Catalina Aristizabal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* ========== COACHING PAGE ========== */
+
+    /* HERO */
+    .coaching-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+      background: var(--color-dark);
+    }
+    .coaching-hero-bg {
+      position: relative;
+      overflow: hidden;
+    }
+    .coaching-hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+    .coaching-hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 4rem;
+    }
+    .coaching-hero-label {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-terra);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .coaching-hero-label::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--color-terra);
+    }
+    .coaching-hero-content h1 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      line-height: 1.08;
+    }
+    .coaching-hero-content h1 em {
+      font-style: italic;
+      color: var(--color-terra);
+    }
+    .coaching-hero-tagline {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    /* INTRO */
+    .coaching-intro {
+      padding: var(--section-padding);
+    }
+    .coaching-intro .container {
+      max-width: 720px;
+      text-align: center;
+    }
+    .coaching-intro blockquote {
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      color: var(--color-dark);
+      margin-bottom: 1.5rem;
+    }
+    .coaching-intro p {
+      font-size: 1rem;
+      color: var(--color-text-light);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* FASES */
+    .coaching-fases {
+      padding: var(--section-padding);
+      background: var(--color-cream);
+    }
+    .coaching-fases-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .coaching-fases-header {
+      margin-bottom: 4rem;
+    }
+    .coaching-section-label {
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-terra-dark);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .coaching-section-label::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--color-terra-dark);
+    }
+    .coaching-fases-header h2 {
+      margin-bottom: 0;
+    }
+    .fase {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3.5rem;
+      padding-bottom: 3.5rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .fase:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .fase-number-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-terra-dark);
+      margin-bottom: 0.3rem;
+    }
+    .fase-number-big {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--color-dark);
+    }
+    .fase-number-months {
+      font-size: 0.72rem;
+      color: var(--color-text-light);
+      margin-top: 0.3rem;
+    }
+    .fase-body h3 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 2rem;
+      color: var(--color-dark);
+      margin-bottom: 0.25rem;
+    }
+    .fase-subtitle {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-terra-dark);
+      margin-bottom: 1.5rem;
+    }
+    .fase-body ul {
+      list-style: none;
+      padding: 0;
+    }
+    .fase-body li {
+      font-size: 0.92rem;
+      color: var(--color-text-light);
+      padding: 0.5rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+      line-height: 1.6;
+    }
+    .fase-body li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.95rem;
+      width: 6px;
+      height: 1px;
+      background: var(--color-terra);
+    }
+
+    /* INCLUYE */
+    .coaching-incluye {
+      padding: var(--section-padding);
+    }
+    .coaching-incluye-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .coaching-incluye-header {
+      margin-bottom: 3rem;
+    }
+    .incluye-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .incluye-item {
+      background: var(--color-cream);
+      padding: 1.75rem;
+      border-radius: 2px;
+    }
+    .incluye-item h4 {
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--color-dark);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .incluye-item h4::before {
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: var(--color-terra);
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+    .incluye-item p {
+      font-size: 0.82rem;
+      color: var(--color-text-light);
+      padding-left: 1.4rem;
+    }
+
+    /* PRECIOS */
+    .coaching-precios {
+      padding: var(--section-padding);
+      background: var(--color-cream);
+    }
+    .coaching-precios-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .coaching-precios-header {
+      margin-bottom: 3rem;
+    }
+    .precio-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .precio-row:first-of-type {
+      border-top: 1px solid var(--color-border);
+    }
+    .precio-row.destacado {
+      background: var(--color-dark);
+      color: #fff;
+      margin: 0 -2rem;
+      padding: 2rem;
+      border: none;
+      border-radius: 2px;
+    }
+    .precio-info h4 {
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+    .precio-info p {
+      font-size: 0.78rem;
+      color: var(--color-text-light);
+    }
+    .precio-row.destacado .precio-info p {
+      color: rgba(255,255,255,0.55);
+    }
+    .precio-amount {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 1;
+      color: var(--color-dark);
+      white-space: nowrap;
+    }
+    .precio-row.destacado .precio-amount {
+      color: #fff;
+    }
+    .precio-amount small {
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      font-weight: 300;
+    }
+    .precio-row.destacado .precio-amount small {
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* DISCLAIMER */
+    .disclaimer {
+      margin-top: 3rem;
+      padding: 1.5rem 2rem;
+      border-left: 2px solid var(--color-terra);
+      background: var(--color-bg);
+      border-radius: 0 2px 2px 0;
+    }
+    .disclaimer p {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--color-text-light);
+      line-height: 1.7;
+    }
+
+    /* CTA FINAL */
+    .coaching-cta {
+      padding: 6rem 1.5rem;
+      background: var(--color-dark);
+      text-align: center;
+    }
+    .coaching-cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .coaching-cta h2 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .coaching-cta p {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    .btn-terra {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--color-terra);
+      color: #fff;
+      border: 1px solid var(--color-terra);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-terra:hover {
+      background: var(--color-terra-dark);
+      border-color: var(--color-terra-dark);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .coaching-hero {
+        grid-template-columns: 1fr;
+      }
+      .coaching-hero-bg {
+        height: 70vh;
+      }
+      .coaching-hero-content { padding: 3rem 1.5rem; }
+      .fase {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .fase-number {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+      }
+      .incluye-grid { grid-template-columns: 1fr; }
+      .precio-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+      .precio-row.destacado {
+        margin: 0 -1rem;
+        padding: 1.75rem 1.5rem;
+      }
+      .precio-amount { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
+    <a href="../index.html" class="nav-logo">Catalina Aristizabal</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+      <li><a href="../index.html#mundos">Mis mundos</a></li>
+      <li><a href="index.html">Trabaja conmigo</a></li>
+      <li><a href="../index.html#podcast">Podcast</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="coaching-hero">
+    <div class="coaching-hero-bg">
+      <img src="../images/coaching.jpg" alt="Catalina Aristizabal" style="object-position: center 30%;" />
+    </div>
+    <div class="coaching-hero-content">
+      <p class="coaching-hero-label">Programa 1:1 · 6 meses</p>
+      <h1>Equilibrio<br /><em>Hormonal</em><br />Integral</h1>
+      <p class="coaching-hero-tagline">Un acompañamiento profundo para recuperar tu energía, equilibrar tus hormonas y construir una relación amorosa con tu cuerpo — desde la raíz.</p>
+      <a href="#precios" class="btn-terra" style="margin-top: 2rem; display: inline-block;">Ver programa →</a>
+    </div>
+  </section>
+
+  <!-- INTRO / QUOTE -->
+  <section class="coaching-intro">
+    <div class="container">
+      <blockquote>"Tu cuerpo tiene la capacidad de sanar<br />cuando le das lo que realmente necesita."</blockquote>
+      <p>Durante 6 meses te acompaño de manera personalizada a comprender tu cuerpo, equilibrar tus hormonas y transformar tu relación con la salud. No desde la restricción, sino desde la consciencia y el amor propio.</p>
+    </div>
+  </section>
+
+  <!-- FASES -->
+  <section class="coaching-fases">
+    <div class="coaching-fases-inner">
+      <div class="coaching-fases-header fade-in">
+        <p class="coaching-section-label">El viaje</p>
+        <h2>Las tres fases del programa</h2>
+      </div>
+
+      <div class="fase fade-in">
+        <div class="fase-number">
+          <p class="fase-number-label">Fase</p>
+          <p class="fase-number-big">01</p>
+          <p class="fase-number-months">Mes 1–2</p>
+        </div>
+        <div class="fase-body">
+          <h3>Raíces</h3>
+          <p class="fase-subtitle">Conocerte profundo y construir la base</p>
+          <ul>
+            <li>Sesión inicial (90 min) — Historia hormonal, emocional y de hábitos.</li>
+            <li>Identificación de patrones que te están bloqueando.</li>
+            <li>Hoja de ruta personalizada para los 6 meses.</li>
+            <li>2 sesiones/mes (60 min c/u) — Nutrición funcional adaptada a ti.</li>
+            <li>Hábitos de sueño, manejo del estrés y ritmo circadiano.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fase fade-in">
+        <div class="fase-number">
+          <p class="fase-number-label">Fase</p>
+          <p class="fase-number-big">02</p>
+          <p class="fase-number-months">Mes 3–4</p>
+        </div>
+        <div class="fase-body">
+          <h3>Crecimiento</h3>
+          <p class="fase-subtitle">Ajustar, profundizar y trabajar la mente</p>
+          <ul>
+            <li>Revisión de avances y ajuste del plan.</li>
+            <li>Trabajo emocional: relación con la comida, el cuerpo y el ciclo.</li>
+            <li>Educación sobre metabolismo hormonal y peso.</li>
+            <li>Herramientas para sostener los cambios en el tiempo.</li>
+            <li>2 sesiones/mes + soporte continuo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fase fade-in">
+        <div class="fase-number">
+          <p class="fase-number-label">Fase</p>
+          <p class="fase-number-big">03</p>
+          <p class="fase-number-months">Mes 5–6</p>
+        </div>
+        <div class="fase-body">
+          <h3>Florecimiento</h3>
+          <p class="fase-subtitle">Autonomía, integración y cierre</p>
+          <ul>
+            <li>Consolidación de todos los pilares trabajados.</li>
+            <li>Relación con el cuerpo, autoestima y bienestar emocional.</li>
+            <li>Plan de mantenimiento que puedas seguir sola.</li>
+            <li>Sesión de cierre: celebración de transformación y próximos pasos.</li>
+            <li>2 sesiones/mes + soporte por WhatsApp.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LO QUE INCLUYE -->
+  <section class="coaching-incluye">
+    <div class="coaching-incluye-inner">
+      <div class="coaching-incluye-header fade-in">
+        <p class="coaching-section-label">Tu programa</p>
+        <h2>Lo que incluye</h2>
+      </div>
+      <div class="incluye-grid">
+        <div class="incluye-item fade-in">
+          <h4>12 sesiones en total</h4>
+          <p>Distribuidas estratégicamente en 6 meses</p>
+        </div>
+        <div class="incluye-item fade-in">
+          <h4>Guía de nutrición funcional</h4>
+          <p>Personalizada para tu caso</p>
+        </div>
+        <div class="incluye-item fade-in">
+          <h4>Recursos por fase</h4>
+          <p>Lecturas, herramientas y materiales</p>
+        </div>
+        <div class="incluye-item fade-in">
+          <h4>Soporte por WhatsApp</h4>
+          <p>Disponible durante los últimos 2 meses</p>
+        </div>
+        <div class="incluye-item fade-in">
+          <h4>Plan de hábitos por escrito</h4>
+          <p>Para continuar sola después del programa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section class="coaching-precios" id="precios">
+    <div class="coaching-precios-inner">
+      <div class="coaching-precios-header fade-in">
+        <p class="coaching-section-label">Tu inversión</p>
+        <h2>Inversión en tu bienestar</h2>
+      </div>
+
+      <div class="precio-row fade-in">
+        <div class="precio-info">
+          <h4>Primera consulta (standalone)</h4>
+          <p>Sesión inicial de 90 minutos</p>
+        </div>
+        <div class="precio-amount">$180</div>
+      </div>
+
+      <div class="precio-row destacado fade-in">
+        <div class="precio-info">
+          <h4>Programa completo · 6 meses</h4>
+          <p>Pago único · Consulta inicial incluida</p>
+        </div>
+        <div class="precio-amount">$2,300</div>
+      </div>
+
+      <div class="precio-row fade-in">
+        <div class="precio-info">
+          <h4>Programa completo · 6 meses</h4>
+          <p>2 pagos</p>
+        </div>
+        <div class="precio-amount">$1,200 <small>/pago</small></div>
+      </div>
+
+      <div class="disclaimer">
+        <p>Este programa es de coaching de bienestar y educación en salud hormonal. No reemplaza la atención médica ni constituye diagnóstico, tratamiento o prescripción médica. Siempre consulta con tu médico de confianza para condiciones de salud específicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="coaching-cta">
+    <div class="coaching-cta-inner">
+      <h2>¿Lista para comenzar?</h2>
+      <p>El primer paso es una conversación. Cuéntame dónde estás y hacia dónde quieres ir.</p>
+      <a href="mailto:catahealthcoach@gmail.com" class="btn-terra">Escríbeme</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <p class="footer-logo">Catalina Aristizabal</p>
+        <p class="footer-tagline">Health Coach · Empresaria · Escritora</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@catahealth_" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=1113f979df5e411d" target="_blank" rel="noopener">Podcast</a>
+        <a href="https://terramistica.us/" target="_blank" rel="noopener">Terra Mística</a>
+      </div>
+      <p class="footer-copy">© 2026 Catalina Aristizabal. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
