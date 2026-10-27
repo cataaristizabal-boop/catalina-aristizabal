@@ -16,50 +16,29 @@
   <nav class="nav" id="nav">
     <a href="#" class="nav-logo">Catalina Aristizabal</a>
     <ul class="nav-links">
-      <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
-      <li class="nav-item-dropdown">
-        <a href="#mundos" data-i18n="nav.worlds" class="nav-dropdown-toggle">Mis mundos <span class="nav-arrow">&#9660;</span></a>
-        <ul class="nav-dropdown">
-          <li><a href="belleza-natural/index.html">Belleza Natural</a></li>
-          <li><a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank">Nuevo Canal</a></li>
-          <li><a href="https://terramistica.us/" target="_blank">Terra Mística</a></li>
-          <li><a href="https://terramistica.us/es/products/belleza-hormonal" target="_blank">Belleza Hormonal</a></li>
-          <li><a href="https://www.spreaker.com/podcast/conversaciones-que-sanan--6677236" target="_blank">Conversaciones que Sanan</a></li>
-        </ul>
-      </li>
+      <li><a href="#mundos">Mis Mundos</a></li>
+      <li><a href="#editorial">Leer</a></li>
+      <li><a href="https://terramistica.us/" target="_blank" rel="noopener">Shop</a></li>
+      <li><a href="trabaja-conmigo/index.html">Coaching</a></li>
       <li><a href="#podcast">Podcast</a></li>
-      <li><a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
-    <div class="lang-switcher" id="langSwitcher">
-      <button class="lang-btn active" data-lang="es">ES</button>
-      <span class="lang-divider">|</span>
-      <button class="lang-btn" data-lang="en">EN</button>
-    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- MENÚ MÓVIL (panel lateral izquierdo) -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu-close" id="mobileMenuClose">&#10005;</button>
-    <ul class="mobile-nav-links">
-      <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
-      <li class="mobile-item-dropdown">
-        <button class="mobile-dropdown-toggle">Mis mundos <span class="mobile-arrow">&#9660;</span></button>
-        <ul class="mobile-dropdown">
-          <li><a href="belleza-natural/index.html">Belleza Natural</a></li>
-          <li><a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank">Nuevo Canal</a></li>
-          <li><a href="https://terramistica.us/" target="_blank">Terra Mística</a></li>
-          <li><a href="https://terramistica.us/es/products/belleza-hormonal" target="_blank">Belleza Hormonal</a></li>
-          <li><a href="https://www.spreaker.com/podcast/conversaciones-que-sanan--6677236" target="_blank">Conversaciones que Sanan</a></li>
-        </ul>
-      </li>
-      <li><a href="#podcast">Podcast</a></li>
-      <li><a href="https://www.instagram.com/catalinaaristizabalh" target="_blank">Instagram</a></li>
-    </ul>
+  <!-- NAV NIVEL 2 — pills de categoría -->
+  <div class="nav-pills-bar" id="navPills">
+    <button class="pill active" data-filter="todas">Todas</button>
+    <button class="pill" data-filter="nutricion">Nutrición</button>
+    <button class="pill" data-filter="hormonas">Hormonas</button>
+    <button class="pill" data-filter="belleza">Belleza consciente</button>
+    <button class="pill" data-filter="estilo">Estilo de vida</button>
+    <button class="pill" data-filter="espiritualidad">Espiritualidad</button>
+    <button class="pill" data-filter="relaciones">Relaciones</button>
+    <button class="pill" data-filter="salud">Salud</button>
+    <button class="pill" data-filter="fitness">Fitness</button>
   </div>
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
   <!-- HERO -->
   <section class="hero">
@@ -67,12 +46,14 @@
       <img src="images/foto1.jpg" alt="Catalina Aristizabal" class="hero-img" />
     </div>
     <div class="hero-content">
-      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Una mirada profunda<br />hacia el equilibrio, la salud y la belleza consciente</p>
+      <p class="hero-eyebrow">Una mirada profunda<br />hacia el equilibrio, la salud y la belleza consciente</p>
       <h1 class="hero-title">Catalina<br />Aristizabal</h1>
-      <p class="hero-tagline" data-i18n="hero.tagline">Salud, belleza y consciencia<br />en un mismo camino.</p>
-      <a href="#mundos" class="btn btn-outline-dark" data-i18n="hero.cta">Explora mi mundo</a>
+      <p class="hero-tagline">Salud, belleza y consciencia<br />en un mismo camino.</p>
+      <a href="#mundos" class="btn btn-outline">Explora mi mundo</a>
     </div>
-    <div class="hero-scroll"><span></span></div>
+    <div class="hero-scroll">
+      <span></span>
+    </div>
   </section>
 
   <!-- SOBRE MÍ -->
@@ -82,13 +63,12 @@
         <img src="images/foto2.jpg" alt="Catalina" class="sobre-img" />
       </div>
       <div class="sobre-text fade-in">
-        <span class="section-label" data-i18n="about.label">Sobre mí</span>
-        <h2 data-i18n="about.title">No llegué al bienestar<br />desde la teoría.</h2>
-        <p data-i18n="about.p1">Llegué desde la experiencia. Durante años estudié el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnóstico de Hashimoto marcó un antes y un después. Me obligó a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.</p>
-        <p data-i18n="about.p2">No creo en soluciones rápidas. Creo en comprensión profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompañado a mujeres que desean entender su cuerpo, recuperar su energía y vivir con mayor claridad. No desde la perfección, sino desde el equilibrio.</p>
-        <p data-i18n="about.p3">Soy fundadora de Terra Mística, autora y educadora en bienestar femenino. Pero más allá de los títulos, soy una mujer que decidió convertir el aprendizaje en servicio.</p>
-        <p class="sobre-frase" data-i18n="about.frase">Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformación ocurre cuando comprendemos quiénes somos y cómo funciona nuestro cuerpo.</p>
-        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="about.cta">Sígueme en Instagram</a>
+        <span class="section-label">Sobre mí</span>
+        <h2>No llegué al bienestar<br />desde la teoría.</h2>
+        <p>Llegué desde la experiencia. Durante años estudié el cuerpo femenino, las hormonas, la microbiota y los procesos internos que muchas veces no entendemos hasta que nos atraviesan. Mi propio diagnóstico de Hashimoto marcó un antes y un después. Me obligó a mirar hacia adentro, a cuestionar, a investigar y a construir un conocimiento con fundamento.</p>
+        <p>No creo en soluciones rápidas. Creo en comprensión profunda. Mi trabajo une ciencia, conciencia y experiencia real. He acompañado a mujeres que desean entender su cuerpo, recuperar su energía y vivir con mayor claridad. No desde la perfección, sino desde el equilibrio.</p>
+        <p>Soy fundadora de Terra Mística, autora y educadora en bienestar femenino. Pero más allá de los títulos, soy una mujer que decidió convertir el aprendizaje en servicio.</p>
+        <p class="sobre-frase">Mi enfoque no es imponer un camino. Es ofrecer claridad para que cada mujer pueda habitar su cuerpo con confianza. Porque la verdadera transformación ocurre cuando comprendemos quiénes somos y cómo funciona nuestro cuerpo.</p>
       </div>
     </div>
   </section>
@@ -97,78 +77,251 @@
   <section class="mundos" id="mundos">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-label" data-i18n="worlds.label">Lo que hago</span>
-        <h2 data-i18n="worlds.title">Mis mundos</h2>
-        <p class="section-desc" data-i18n="worlds.desc">Cinco caminos hacia el bienestar, la consciencia y la belleza natural.</p>
+        <h2>Mis mundos</h2>
+        <p class="section-desc">Seis caminos hacia el bienestar, la consciencia y la belleza natural.</p>
       </div>
+
       <div class="mundos-grid">
 
+        <!-- Coaching — texto overlay -->
         <article class="mundo-card fade-in">
-          <div class="mundo-image-wrap">
-            <img src="images/foto3.jpg" alt="Curso Belleza Natural" />
-            <div class="mundo-overlay"></div>
+          <div class="mundo-image-wrap mundo-image-wrap--text">
+            <img src="images/coaching.jpg" alt="Coaching con Catalina" style="object-position: center 30%;" />
+            <div class="mundo-overlay mundo-overlay--strong"></div>
+            <div class="mundo-text-overlay">
+              <h3>Equilibrio<br />Hormonal<br />Integral</h3>
+              <p class="mundo-overlay-sub"><em>Un programa 1:1 de 6 meses para recuperar tu energía y equilibrar tus hormonas.</em></p>
+            </div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag" data-i18n="worlds.course.tag">Curso online</span>
-            <h3 data-i18n="worlds.course.title">Belleza Natural</h3>
-            <p data-i18n="worlds.course.desc">6 módulos para transformar tu relación con tu cuerpo desde adentro. Nutrición, movimiento, meditación y más.</p>
-            <a href="belleza-natural/index.html" class="btn btn-dark" data-i18n="worlds.course.cta">Ver curso</a>
+            <span class="mundo-tag">Programa 1:1 · 6 meses</span>
+            <a href="trabaja-conmigo/index.html" class="btn btn-dark">Trabaja conmigo →</a>
           </div>
         </article>
 
+        <!-- Belleza Natural -->
         <article class="mundo-card fade-in">
           <div class="mundo-image-wrap">
-            <img src="images/youtube-canal.jpg" alt="Nuevo Canal YouTube" />
+            <img src="images/belleza-natural.jpg" alt="Curso Belleza Natural" style="object-position: center top;" />
             <div class="mundo-overlay"></div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag" data-i18n="worlds.youtube.tag">YouTube · Próximamente</span>
-            <h3 data-i18n="worlds.youtube.title">Nuevo Canal</h3>
-            <p data-i18n="worlds.youtube.desc">Contenido sobre salud holística, estilo de vida consciente y bienestar. Suscríbete para ser el primero.</p>
-            <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn btn-outline-dark" data-i18n="worlds.youtube.cta">Suscríbete</a>
+            <span class="mundo-tag">Curso online</span>
+            <h3>Belleza Natural</h3>
+            <p>6 módulos para transformar tu relación con tu cuerpo desde adentro. Nutrición, movimiento, meditación y más.</p>
+            <a href="belleza-natural/index.html" class="btn btn-dark">Ver curso →</a>
           </div>
         </article>
 
+        <!-- Terra Mística -->
         <article class="mundo-card fade-in">
           <div class="mundo-image-wrap">
-            <img src="images/terra.jpg" alt="Terra Mística" style="object-position: center 30%;" />
+            <img src="images/terra-mystica.jpg" alt="Terra Mística" />
             <div class="mundo-overlay"></div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag" data-i18n="worlds.terra.tag">Tienda · Productos naturales</span>
-            <h3 data-i18n="worlds.terra.title">Terra Mística</h3>
-            <p data-i18n="worlds.terra.desc">Co-fundadora de una línea de productos naturales para el bienestar y la belleza consciente.</p>
-            <a href="https://terramistica.us/" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="worlds.terra.cta">Explorar tienda</a>
-            <a href="https://www.instagram.com/TerraMistica.US" target="_blank" rel="noopener" class="btn btn-outline-dark" data-i18n="worlds.terra.instagram">Síguenos en Instagram</a>
+            <span class="mundo-tag">Tienda · Productos naturales</span>
+            <h3>Terra Mística</h3>
+            <p>Co-fundadora de una línea de productos naturales para el bienestar y la belleza consciente.</p>
+            <a href="https://terramistica.us/" target="_blank" rel="noopener" class="btn btn-dark">Explorar tienda →</a>
           </div>
         </article>
 
+        <!-- Libro -->
         <article class="mundo-card fade-in">
           <div class="mundo-image-wrap">
             <img src="images/libro-belleza-hormonal.jpg" alt="Libro Belleza Hormonal" />
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag" data-i18n="worlds.book.tag">Libro</span>
-            <h3 data-i18n="worlds.book.title">Belleza Hormonal</h3>
-            <p data-i18n="worlds.book.desc">Mi libro sobre el equilibrio hormonal, la belleza desde adentro y cómo entender tu cuerpo femenino para vivir mejor.</p>
-            <a href="https://terramistica.us/es/products/belleza-hormonal?_pos=1&_psq=libro&_ss=e&_v=1.0" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="worlds.book.cta">Conseguir libro</a>
+            <span class="mundo-tag">Libro</span>
+            <h3>Belleza Hormonal</h3>
+            <p>Mi libro sobre el equilibrio hormonal, la belleza desde adentro y cómo entender tu cuerpo femenino para vivir mejor.</p>
+            <a href="https://terramistica.us/es/products/belleza-hormonal?_pos=1&_psq=libro&_ss=e&_v=1.0" target="_blank" rel="noopener" class="btn btn-dark">Conseguir libro →</a>
           </div>
         </article>
 
+        <!-- YouTube -->
+        <article class="mundo-card fade-in">
+          <div class="mundo-image-wrap mundo-image-wrap--youtube" style="background: var(--color-dark); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem; padding: 2rem;">
+            <div class="podcast-waves" style="height: 50px;">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p style="font-family: var(--font-serif); font-size: 1.4rem; color: #fff; text-align: center; line-height: 1.3;">Catalina Aristizabal —<br />Conversaciones que Sanan</p>
+            <p style="font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-terra); text-align: center;">con Catalina Aristizabal</p>
+          </div>
+          <div class="mundo-content">
+            <span class="mundo-tag">YouTube</span>
+            <h3>Nuevo Canal</h3>
+            <p>Contenido sobre salud holística, estilo de vida consciente y bienestar. Suscríbete para ser el primero.</p>
+            <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn btn-outline-dark">Suscríbete →</a>
+          </div>
+        </article>
+
+        <!-- Cuidado holístico de la piel — Próximamente -->
+        <article class="mundo-card fade-in">
+          <div class="mundo-image-wrap mundo-image-wrap--text">
+            <img src="images/skin-course.png" alt="Cuidado holístico de la piel" style="object-position: center top;" />
+            <div class="mundo-overlay mundo-overlay--strong"></div>
+            <span class="proximamente-badge">Próximamente</span>
+            <div class="mundo-text-overlay">
+              <h3>Cuidado<br />holístico<br />de la piel</h3>
+              <p class="mundo-overlay-sub"><em>Protocolos naturales y el vínculo entre piel y hormonas.</em></p>
+            </div>
+          </div>
+          <div class="mundo-content">
+            <span class="mundo-tag">Curso online · Próximamente</span>
+            <a href="#" class="btn btn-outline-dark">Próximamente →</a>
+          </div>
+        </article>
+
+        <!-- Podcast -->
         <article class="mundo-card fade-in">
           <div class="mundo-image-wrap">
-            <img src="images/foto4.jpg" alt="Podcast Conversaciones que Sanan" />
+            <img src="images/foto4.jpg" alt="Podcast Catalina Aristizabal — Conversaciones que Sanan" />
             <div class="mundo-overlay"></div>
           </div>
           <div class="mundo-content">
-            <span class="mundo-tag" data-i18n="worlds.podcast.tag">Podcast</span>
-            <h3 data-i18n="worlds.podcast.title">Conversaciones que Sanan</h3>
-            <p data-i18n="worlds.podcast.desc">Conversaciones profundas que sanan el alma, la mente y el cuerpo. Disponible en Spreaker.</p>
+            <span class="mundo-tag">Podcast</span>
+            <h3>Catalina Aristizabal — Conversaciones que Sanan</h3>
+            <p>Conversaciones sobre equilibrio, plenitud y salud integral femenina. Disponible en tus plataformas favoritas.</p>
             <div class="podcast-links">
-              <a href="https://www.spreaker.com/podcast/conversaciones-que-sanan--6677236" target="_blank" rel="noopener" class="btn-podcast">Spreaker</a>
-              <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=7ee4f7260a444f9d" target="_blank" rel="noopener" class="btn-podcast">Spotify</a>
+              <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=1113f979df5e411d" target="_blank" rel="noopener" class="btn-podcast">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                Spotify
+              </a>
+              <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn-podcast">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                YouTube
+              </a>
+            </div>
+            <div class="podcast-also">
+              <h3>Meditaciones que Sanan</h3>
+              <p>Meditaciones guiadas para volver a tu centro: para calmar la ansiedad, acompañar el duelo o simplemente regalarte un momento de paz. Cada lunes, una nueva pausa para respirar, sentir y volver a ti.</p>
+              <div class="podcast-links">
+                <a href="https://open.spotify.com/show/1p5vmACIbxCH9JrVYw2H1e" target="_blank" rel="noopener" class="btn-podcast">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                  Spotify
+                </a>
+                <a href="https://podcasts.apple.com/us/podcast/meditaciones-que-sanan/id6827311081" target="_blank" rel="noopener" class="btn-podcast">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M16.37 12.25c0-2.21 1.81-3.27 1.89-3.32-1.03-1.51-2.64-1.72-3.21-1.74-1.37-.14-2.67.81-3.36.81-.7 0-1.77-.79-2.91-.77-1.5.02-2.88.87-3.65 2.21-1.56 2.7-.4 6.7 1.12 8.89.74 1.07 1.62 2.27 2.78 2.23 1.12-.05 1.54-.72 2.89-.72 1.35 0 1.73.72 2.91.7 1.2-.02 1.96-1.09 2.69-2.17.85-1.24 1.2-2.44 1.22-2.5-.03-.01-2.34-.9-2.37-3.62zM14.55 6.3c.62-.75 1.03-1.79.92-2.83-.89.04-1.96.59-2.6 1.34-.57.66-1.07 1.72-.94 2.73 1 .08 2-.32 2.62-1.24z"/></svg>
+                  Apple Podcasts
+                </a>
+                <a href="https://www.youtube.com/playlist?list=PLeIMoK-tHaC0" target="_blank" rel="noopener" class="btn-podcast">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  YouTube
+                </a>
+                <a href="https://music.amazon.com/podcasts/501cb068-115d-4d0b-b084-684a41c66203" target="_blank" rel="noopener" class="btn-podcast">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M13.2 15.5c-2.2 1.6-5.4 2.5-8.1 2.5-3.8 0-7.3-1.4-9.9-3.8-.2-.2 0-.5.3-.3 2.9 1.7 6.6 2.7 10.4 2.7 2.5 0 5.3-.5 7.8-1.6.4-.2.8.2.4.5h-.9zm1.3-1.2c-.3-.4-1.8-.2-2.5-.1-.2 0-.3-.2-.1-.3 1-.7 2.8-.5 3-.3.2.2 0 2.1-1 3-.2.1-.3 0-.2-.2.2-.7.8-1.7.8-2.1zM16.4 4.8v7.4c0 2.3-.5 3.4-2 3.4-1.2 0-1.8-.8-1.8-2.1V5.4h-1.6v8.2c0 2.4 1.2 3.6 3.3 3.6 1.7 0 2.9-.8 3.4-2.2.3-.8.4-1.9.4-3V4.8h-1.7z"/></svg>
+                  Amazon Music
+                </a>
+              </div>
             </div>
           </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL -->
+  <section class="editorial" id="editorial">
+    <div class="container">
+      <div class="editorial-header fade-in">
+        <span class="section-label">Desde mi escritorio</span>
+        <h2>Bienestar desde adentro</h2>
+      </div>
+      <div class="filter-pills">
+        <button class="pill active" data-filter="todas">Todas</button>
+        <button class="pill" data-filter="nutricion">Nutrición</button>
+        <button class="pill" data-filter="hormonas">Hormonas</button>
+        <button class="pill" data-filter="belleza">Belleza consciente</button>
+        <button class="pill" data-filter="estilo">Estilo de vida</button>
+        <button class="pill" data-filter="espiritualidad">Espiritualidad</button>
+        <button class="pill" data-filter="relaciones">Relaciones</button>
+        <button class="pill" data-filter="salud">Salud</button>
+        <button class="pill" data-filter="fitness">Fitness</button>
+      </div>
+      <div class="editorial-grid" id="editorialGrid">
+
+        <article class="article-card fade-in" data-category="hormonas">
+          <img class="article-card-img" src="images/foto2.jpg" alt="" />
+          <span class="article-tag tag--hormonas">Hormonas</span>
+          <h3>Cómo el cortisol afecta tu peso y tu piel</h3>
+          <p>El estrés crónico no es solo mental. Descubre por qué el cortisol elevado puede ser la razón detrás de la inflamación y el acné.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="nutricion">
+          <img class="article-card-img" src="images/foto3.jpg" alt="" />
+          <span class="article-tag tag--nutricion">Nutrición</span>
+          <h3>5 alimentos que equilibran el estrógeno</h3>
+          <p>Lo que comes tiene un impacto directo en tu balance hormonal. Estos ingredientes son mis aliados para regular el estrógeno.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="belleza">
+          <img class="article-card-img" src="images/skin-course.png" alt="" style="object-position: center top;" />
+          <span class="article-tag tag--belleza">Belleza consciente</span>
+          <h3>Por qué tu skincare no funciona si tus hormonas están en caos</h3>
+          <p>Ninguna crema puede compensar un desequilibrio interno. Entiende la conexión entre piel y hormonas.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="estilo">
+          <img class="article-card-img" src="images/foto4.jpg" alt="" />
+          <span class="article-tag tag--estilo">Estilo de vida</span>
+          <h3>El protocolo de sueño que cambió mi energía</h3>
+          <p>Estos cambios concretos en mis hábitos nocturnos transformaron mi claridad mental y mi energía de base.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="hormonas">
+          <img class="article-card-img" src="images/coaching.jpg" alt="" style="object-position: center 30%;" />
+          <span class="article-tag tag--hormonas">Hormonas</span>
+          <h3>Hashimoto: lo que nadie te explica</h3>
+          <p>Todo lo que desearía haber sabido desde el principio sobre esta condición autoinmune que cambió mi vida.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="nutricion">
+          <img class="article-card-img" src="images/belleza-natural.jpg" alt="" style="object-position: center top;" />
+          <span class="article-tag tag--nutricion">Nutrición</span>
+          <h3>Anti-inflamatorio no es una dieta. Es un estilo de vida.</h3>
+          <p>Más allá de eliminar gluten o lácteos, vivir de forma anti-inflamatoria implica decisiones diarias profundas.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="espiritualidad">
+          <img class="article-card-img" src="images/foto1.jpg" alt="" style="object-position: center 20%;" />
+          <span class="article-tag tag--espiritualidad">Espiritualidad</span>
+          <h3>Rituales de mañana que anclan el día</h3>
+          <p>No se trata de perfección ni de horas. Minutos conscientes que le dicen a tu sistema nervioso que está a salvo.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="relaciones">
+          <img class="article-card-img" src="images/foto2.jpg" alt="" />
+          <span class="article-tag tag--relaciones">Relaciones</span>
+          <h3>Cómo los vínculos afectan tu salud hormonal</h3>
+          <p>El amor, el conflicto y la soledad tienen una firma química en tu cuerpo. Entender esto cambia cómo te relacionas.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="salud">
+          <img class="article-card-img" src="images/terra-mystica.jpg" alt="" />
+          <span class="article-tag tag--salud">Salud</span>
+          <h3>Los análisis que toda mujer debería pedir cada año</h3>
+          <p>La medicina preventiva empieza por saber qué preguntar. Esta es la lista que reviso con mis clientas.</p>
+          <a href="#" class="article-read">Leer →</a>
+        </article>
+
+        <article class="article-card fade-in" data-category="fitness">
+          <img class="article-card-img" src="images/foto3.jpg" alt="" />
+          <span class="article-tag tag--fitness">Fitness</span>
+          <h3>Ejercicio hormonal: más no siempre es mejor</h3>
+          <p>Sobreentrenar con Hashimoto o en fase lútea puede hacer más daño que bien. Aprende a moverte según tu ciclo.</p>
+          <a href="#" class="article-read">Leer →</a>
         </article>
 
       </div>
@@ -179,10 +332,10 @@
   <section class="filosofia">
     <div class="container">
       <div class="filosofia-inner fade-in">
-        <blockquote data-i18n="quote.text">
+        <blockquote>
           "La salud no es solo lo que comes.<br />Es todo lo que piensas, sientes y cómo te mueves por la vida."
         </blockquote>
-        <cite>✶ Catalina Aristizabal</cite>
+        <cite>— Catalina Aristizabal</cite>
       </div>
     </div>
   </section>
@@ -192,50 +345,89 @@
     <div class="container">
       <div class="instagram-content fade-in">
         <span class="section-label">@catalinaaristizabalh</span>
-        <h2 data-i18n="ig.title">Únete a la comunidad</h2>
-        <p data-i18n="ig.desc">Comparto recetas, reflexiones, movimiento y todo lo que me apasiona sobre vivir bien.</p>
-        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="ig.cta">Seguir en Instagram</a>
+        <h2>Únete a mi comunidad</h2>
+        <p>Este es un lugar para inspirarte a vivir mejor: desde la nutrición, el movimiento, la belleza consciente y esas reflexiones que nos recuerdan volver a nosotras.</p>
+        <div class="comunidad-buttons">
+          <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="btn btn-dark">
+            Seguir en Instagram
+          </a>
+          <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn btn-outline-dark">
+            Suscríbete en YouTube
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PODCAST DESTACADO -->
   <section class="podcast-section" id="podcast">
-    <div class="container grid-2 grid-2--reverse">
-      <div class="podcast-text fade-in">
-        <span class="section-label" data-i18n="podcast.label">Escúchame</span>
-        <h2 data-i18n="podcast.title">Conversaciones que Sanan</h2>
-        <p data-i18n="podcast.desc">Un podcast de conversaciones profundas que sanan el alma, la mente y el cuerpo.</p>
-        <div class="podcast-actions">
-          <a href="https://www.spreaker.com/podcast/conversaciones-que-sanan--6677236" target="_blank" rel="noopener" class="btn btn-dark" data-i18n="podcast.spreaker">Escuchar en Spreaker</a>
-          <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=7ee4f7260a444f9d" target="_blank" rel="noopener" class="btn btn-outline-dark" data-i18n="podcast.spotify">Escuchar en Spotify</a>
+    <div class="container podcast-shows">
+      <div class="grid-2 grid-2--reverse podcast-show">
+        <div class="podcast-text fade-in">
+          <span class="section-label">Escúchame</span>
+          <h2>Catalina Aristizabal — Conversaciones que Sanan</h2>
+          <p>Un podcast sobre equilibrio, plenitud y salud integral femenina. Cada episodio es una invitación a reconectar con tu naturaleza más profunda.</p>
+          <div class="podcast-actions">
+            <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=1113f979df5e411d" target="_blank" rel="noopener" class="btn btn-dark">Escuchar en Spotify</a>
+            <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="btn btn-outline-dark">YouTube</a>
+          </div>
+        </div>
+        <div class="podcast-image-wrap">
+          <div class="podcast-visual">
+            <div class="podcast-waves">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="podcast-name">Catalina Aristizabal — Conversaciones que Sanan</p>
+            <p class="podcast-by">con Catalina Aristizabal</p>
+          </div>
         </div>
       </div>
-      <div class="podcast-image-wrap">
-        <div class="podcast-visual">
-          <div class="podcast-waves">
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
+
+      <div class="grid-2 podcast-show">
+        <div class="podcast-text fade-in">
+          <span class="section-label">Respira conmigo</span>
+          <h2>Meditaciones que Sanan</h2>
+          <p>Meditaciones guiadas para volver a tu centro: para calmar la ansiedad, acompañar el duelo o simplemente regalarte un momento de paz. Cada lunes, una nueva pausa para respirar, sentir y volver a ti.</p>
+          <div class="podcast-actions">
+            <a href="https://open.spotify.com/show/1p5vmACIbxCH9JrVYw2H1e" target="_blank" rel="noopener" class="btn btn-dark">Escuchar en Spotify</a>
+            <a href="https://podcasts.apple.com/us/podcast/meditaciones-que-sanan/id6827311081" target="_blank" rel="noopener" class="btn btn-outline-dark">Apple Podcasts</a>
+            <a href="https://www.youtube.com/playlist?list=PLeIMoK-tHaC0" target="_blank" rel="noopener" class="btn btn-outline-dark">YouTube</a>
+            <a href="https://music.amazon.com/podcasts/501cb068-115d-4d0b-b084-684a41c66203" target="_blank" rel="noopener" class="btn btn-outline-dark">Amazon Music</a>
           </div>
-          <p class="podcast-name" data-i18n="podcast.name">Conversaciones que Sanan</p>
-          <p class="podcast-by" data-i18n="podcast.by">con Catalina Aristizabal</p>
+        </div>
+        <div class="podcast-image-wrap">
+          <img class="podcast-cover" src="images/meditaciones.jpg" width="1200" height="1200" alt="Portada de Meditaciones que Sanan: piedras apiladas a la orilla del agua" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CIERRE -->
-  <section class="cierre-seccion">
-    <div class="cierre-inner">
-      <div class="cierre-linea-deco"></div>
-      <p class="cierre-texto">
-        <span>No te traiciones por agradar.</span>
-        <span>No apagues tu intuición por miedo.</span>
-        <span>Tu cuerpo siempre sabe la verdad.</span>
-        <span>Elígete con coherencia, todos los días.</span>
-      </p>
-      <div class="cierre-linea-deco-bottom"></div>
-      <p class="cierre-linea-final">✶ Catalina Aristizabal</p>
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="container">
+      <span class="section-label">Contacto</span>
+      <h2>Escríbeme</h2>
+      <p class="contacto-desc">¿Tienes preguntas o quieres saber más? Encuéntrame en mis redes o escríbeme directamente.</p>
+      <div class="contacto-redes">
+        <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener" class="red-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@terramistica_" target="_blank" rel="noopener" class="red-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.77 1.52V6.76a4.85 4.85 0 01-1-.07z"/></svg>
+          TikTok
+        </a>
+        <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=1113f979df5e411d" target="_blank" rel="noopener" class="red-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Podcast
+        </a>
+        <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener" class="red-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </div>
+      <a href="mailto:catahealthcoach@gmail.com" class="btn btn-dark contacto-btn">Escríbeme →</a>
     </div>
   </section>
 
@@ -244,16 +436,16 @@
     <div class="container">
       <div class="footer-top">
         <p class="footer-logo">Catalina Aristizabal</p>
-        <p class="footer-tagline" data-i18n="footer.tagline">Health Coach · Empresaria · Escritora</p>
+        <p class="footer-tagline">Health Coach · Empresaria · Escritora</p>
       </div>
       <div class="footer-links">
         <a href="https://www.instagram.com/catalinaaristizabalh" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@catalinatiktok" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.tiktok.com/@terramistica_" target="_blank" rel="noopener">TikTok</a>
         <a href="https://www.youtube.com/channel/UCPrXlia-G9QQEyMYRNGUVoQ" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://www.spreaker.com/podcast/conversaciones-que-sanan--6677236" target="_blank" rel="noopener">Podcast</a>
+        <a href="https://open.spotify.com/show/0FNk7JtYBHISEStvZfWXEb?si=1113f979df5e411d" target="_blank" rel="noopener">Podcast</a>
         <a href="https://terramistica.us/" target="_blank" rel="noopener">Terra Mística</a>
       </div>
-      <p class="footer-copy" data-i18n="footer.copy">© 2026 Catalina Aristizabal. Todos los derechos reservados.</p>
+      <p class="footer-copy">© 2026 Catalina Aristizabal. Todos los derechos reservados.</p>
     </div>
   </footer>
 
