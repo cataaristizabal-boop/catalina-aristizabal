@@ -71,6 +71,44 @@
       line-height: 1.6;
       max-width: 520px;
     }
+    .coaching-hero-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.85rem;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 420px;
+    }
+    .btn-terra-outline {
+      display: block;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2;
+      background: transparent;
+      color: var(--color-terra);
+      border: 1px solid var(--color-terra);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .btn-terra-outline:hover {
+      background: var(--color-terra);
+      color: #fff;
+    }
+    .coaching-hero-actions .btn-terra {
+      display: block;
+      width: 100%;
+      margin-top: 0;
+      text-align: center;
+      line-height: 1.2;
+    }
 
     /* INTRO */
     .coaching-intro {
@@ -364,6 +402,47 @@
       border-color: var(--color-terra-dark);
     }
 
+    /* ENCUENTRO */
+    .encuentro {
+      padding: var(--section-padding);
+      background: var(--color-bg);
+    }
+    .encuentro-grid {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .encuentro-image {
+      overflow: hidden;
+    }
+    .encuentro-image img {
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+      object-position: center 18%;
+    }
+    .encuentro h2 {
+      color: var(--color-dark);
+      margin-bottom: 1.25rem;
+    }
+    .encuentro-body {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--color-text);
+      margin-bottom: 1.15rem;
+      max-width: 34rem;
+    }
+    .encuentro-line {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--color-text-light);
+      margin-bottom: 2rem;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 768px) {
       .coaching-hero {
@@ -373,6 +452,23 @@
         height: 70vh;
       }
       .coaching-hero-content { padding: 3rem 1.5rem; }
+      .coaching-hero-actions {
+        max-width: none;
+      }
+      .encuentro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .encuentro-image img {
+        height: 78vw;
+        max-height: 460px;
+        object-position: center 12%;
+      }
+      .encuentro .btn-terra {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
       .fase {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -421,7 +517,10 @@
       <p class="coaching-hero-label">Programa 1:1 · 6 meses</p>
       <h1>Equilibrio<br /><em>Hormonal</em><br />Integral</h1>
       <p class="coaching-hero-tagline">Un acompañamiento profundo para recuperar tu energía, equilibrar tus hormonas y construir una relación amorosa con tu cuerpo — desde la raíz.</p>
-      <a href="#precios" class="btn-terra" style="margin-top: 2rem; display: inline-block;">Ver programa →</a>
+      <div class="coaching-hero-actions">
+        <a href="https://calendly.com/catahealthcoach/coaching" target="_blank" rel="noopener" class="btn-terra-outline">Sesiones privadas online</a>
+        <a href="#precios" class="btn-terra">Ver programa →</a>
+      </div>
     </div>
   </section>
 
@@ -566,6 +665,21 @@
 
       <div class="disclaimer">
         <p>Este programa es de coaching de bienestar y educación en salud hormonal. No reemplaza la atención médica ni constituye diagnóstico, tratamiento o prescripción médica. Siempre consulta con tu médico de confianza para condiciones de salud específicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENCUÉNTRATE CONMIGO -->
+  <section class="encuentro" id="encuentro">
+    <div class="encuentro-grid">
+      <div class="encuentro-image">
+        <img src="../images/foto1.jpg" alt="Catalina Aristizábal" />
+      </div>
+      <div class="encuentro-text fade-in">
+        <h2>Encuéntrate conmigo</h2>
+        <p class="encuentro-body">Una consulta online de 90 minutos, solo para ti. Hablamos de tu cuerpo, tu energía y tus hábitos, y salimos con un camino claro y natural para que vuelvas a sentirte bien.</p>
+        <p class="encuentro-line">Elige tu fecha y agenda tu espacio.</p>
+        <a href="https://calendly.com/catahealthcoach/coaching" target="_blank" rel="noopener" class="btn-terra">Agenda tu consulta →</a>
       </div>
     </div>
   </section>
